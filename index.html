@@ -3,12 +3,12 @@
     <head>
         <meta charset="utf-8">
         <meta name="description"
-        content="Stylebreeder introduces a novel AI-generated image dataset.">
+        content="Personalized Image Editing in Text-to-Image Diffusion Models via Collaborative Direct Preference Optimization">
         <meta name="keywords" content="Diffusion Models, Datasets">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" type="image/png" sizes="32x32" href="./static/favico.png">
         <!-- <script src="https://www.w3counter.com/tracker.js?id=151390"></script> -->
-        <title>Stylebreeder</title>
+        <title>Personalized Image Editing</title>
         <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -44,40 +44,36 @@
           <div class="container is-max-desktop">
             <div class="columns is-centered">
               <div class="column has-text-centered">
-                <h1 class="title is-1 publication-title">Stylebreeder &#127912;: Exploring and Democratizing Artistic Styles through Text-to-Image Models</h1>
+                <h1 class="title is-1 publication-title">Personalized Image Editing in Text-to-Image Diffusion Models via Collaborative Direct Preference Optimization</h1>
                 <div class="is-size-5 publication-authors">
                   <span class="author-block">
-                    <a href="https://sanghani.cs.vt.edu/person/matthew-zheng/">Matthew Zheng</a><sup>1,*</sup>,</span>
+                    <a href="">Connor Dunlop</a>,</span>
                   <span class="author-block">
-                    <a href="https://enis.dev/">Enis Simsar</a><sup>2,*</sup>,</span>
+                    <a href="https://sanghani.cs.vt.edu/person/matthew-zheng/">Matthew Zheng</a>,</span>
                   <span class="author-block">
-                    <a href="https://sites.google.com/view/hidir-yesiltepe">Hidir Yesiltepe</a><sup>1</sup>,</span>
+                    <a href="https://sites.google.com/view/hidir-yesiltepe">Kavana Venkatesh</a>,</span>
                   <span class="author-block">
-                    <a href="https://federicotombari.github.io/">Federico Tombari</a><sup>3,4</sup>,</span>
-                  <span class="author-block">
-                    <a href="https://www.joelsimon.net/">Joel Simon</a><sup>5</sup>,</span>
-                  <span class="author-block">
-                    <a href="https://pinguar.org/">Pinar Yanardag</a><sup>1</sup>
+                    <a href="https://federicotombari.github.io/">Pinar Yanardag</a>,</span>
                   </span>
                 </div>
       
                 <div class="is-size-5 publication-authors">
-                  <span class="author-block"><sup>1</sup>Virginia Tech</span>
-                  <span class="author-block"><sup>2</sup>ETH Zurich</span>
+                  <span class="author-block">Virginia Tech</span>
+                  <!-- <span class="author-block"><sup>2</sup>ETH Zurich</span>
                   <span class="author-block"><sup>3</sup>TUM</span>
                   <span class="author-block"><sup>4</sup>Google</span>
-                  <span class="author-block"><sup>5</sup>Artbreeder</span>
+                  <span class="author-block"><sup>5</sup>Artbreeder</span> -->
                 </div>
-                
+<!--                 
                 <div class="is-size-8 publication-authors">
                   <span class="author-block"><sup>*</sup>Joint co-author</span>
-                </div>
+                </div> -->
       
                 <div class="column has-text-centered">
                   <div class="publication-links">
                     <!-- PDF Link. -->
                     <span class="link-block">
-                      <a href="https://arxiv.org/abs/2406.14599"
+                      <a href=""
                          class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                             <i class="fas fa-file-pdf"></i>
@@ -85,7 +81,7 @@
                         <span>Paper</span>
                       </a>
                     </span>
-                    <span class="link-block">
+                    <!-- <span class="link-block">
                       <a href="https://huggingface.co/datasets/stylebreeder/stylebreeder"
                          class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
@@ -93,25 +89,15 @@
                         </span>
                         <span>Dataset</span>
                       </a>
-                    </span>
-                    <!-- Style Atlas Link -->
-                    <span class="link-block">
-                      <a href="https://stylebreeder.github.io/atlas/"
-                         class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                            <i class="fa fa-database"></i>
-                        </span>
-                        <span>Style Atlas</span>
-                      </a>
-                    </span>
+                    </span> -->
                     <!-- Code Link. -->
                     <span class="link-block">
-                      <a href="https://github.com/stylebreeder/stylebreeder-code"
+                      <a href=""
                          class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                             <i class="fab fa-github"></i>
                         </span>
-                        <span>Code</span>
+                        <span>Code (Coming Soon)</span>
                         </a>
                     </span>
                     <!-- Dataset Link. -->
@@ -132,7 +118,7 @@
         </div>
       </section>
 
-      <section class="hero teaser">
+      <!-- <section class="hero teaser">
         <div class="container is-max-desktop">
           <div class="hero-body">
             <h4 class="subtitle">
@@ -142,23 +128,8 @@
                  Utilizing historical data of the users, we showcase a recommendation system that aligns style suggestions with 
                  individual preferences. We release a web-based platform, Style Atlas, providing public access to download 
                  pre-trained style LoRAs.
-                <!--
-                <span class="dnerf">NoiseCLR</span> discovers semantic directions in latent diffusion models in a completely unsupervised manner. 
-                With this work, we present latent directions discovered in domains such as Art, Fashion, Face, Cats and Cars in Stable Diffusion. -->
-            <!-- </h4>
-            <div class="container">
-                <img src="./static/images/style_models.jpg" />
-                <br/>
-                <p>
-                NoiseCLR can apply multiple directions 
-                either within a single domain (a)  or across different domains   in  the same image (b, c) in a disentangled manner. Since the directions learned by our model 
-                are highly disentangled, there is no need for semantic masks or user-provided guidance to prevent edits in different domains from influencing each other. 
-                Additionally, our method does not require fine-tuning or retraining of the diffusion model, nor does it need any labeled data to learn directions.  
-                <i>Note that our method does not require any text prompts, the direction  names above are provided by us for easy understanding.</i>
-                </p>
-            </div> -->
         </div>
-      </section>
+      </section> -->
 
       <section class="section">
         <div class="container is-max-desktop">
@@ -168,94 +139,46 @@
               <h2 class="title is-3">Abstract</h2>
               <div class="content has-text-justified">
                 <p>
-                    Text-to-image models are becoming increasingly popular, revolutionizing the landscape of digital art creation by enabling highly detailed and creative visual content generation. 
-                    These models have been widely employed across various domains, particularly in art generation, where they facilitate a broad spectrum of creative expression and democratize access 
-                    to artistic creation.  In this paper, we introduce Stylebreeder, a comprehensive dataset of 6.8M images and 1.8M prompts generated by 95K users on Artbreeder,  a platform
-                    that has emerged as a significant hub for creative exploration with over 13M users.  We introduce a series of tasks with this dataset aimed at identifying diverse artistic styles,
-                    generating personalized content, and recommending styles based on user interests. By documenting unique, user-generated styles that transcend conventional categories like cyberpunk'
-                    or 'Picasso,' we explore the potential for unique, crowd-sourced styles that could provide deep insights into the collective creative psyche of users worldwide. We also evaluate 
-                    different personalization methods to enhance artistic expression and introduce a style atlas, making these models available in LoRA format for public use. Our research demonstrates 
-                    the potential of text-to-image diffusion models to uncover and promote unique artistic expressions, further democratizing AI in art and fostering a more diverse and inclusive artistic
-                    community.  The dataset, code and models are available at under a Public Domain (CC0) license.
+                    Text-to-image (T2I) diffusion models have made remarkable strides in generating
+                    and editing high-fidelity images from text. Yet, these models remain fundamentally
+                    generic, failing to adapt to the nuanced aesthetic preferences of individual users. In
+                    this work, we present the first framework for personalized image editing in diffusion
+                    models, introducing Collaborative Direct Preference Optimization (C-DPO), a
+                    novel method that aligns image edits with user-specific preferences while leveraging
+                    collaborative signals from like-minded individuals. Our approach encodes each user
+                    as a node in a dynamic preference graph and learns embeddings via a lightweight
+                    graph neural network, enabling information sharing across users with overlapping
+                    visual tastes. We enhance a diffusion model's editing capabilities by integrating
+                    these personalized embeddings into a novel DPO objective, which jointly optimizes
+                    for individual alignment and neighborhood coherence. Comprehensive experiments,
+                    including user studies and quantitative benchmarks, demonstrate that our method
+                    consistently outperforms baselines in generating edits that are aligned with user
+                    preferences.
                 </p>
               </div>
             </div>
           </div>
+        </section>
           <!--/ Abstract. -->
+
+
+                    <div class="container">
+                      <img src="./static/images/teaser-pers.png" />
+                      <br />
+                    </div>
       
         
         <!-- Method -->
-        <section class="section">
-          <div class="container is-max-desktop">
-            <div class="columns is-centered has-text-centered">
-              <div class="column is-12">
-                <h2 class="title is-3">Stylebreeder Dataset</h2>
-      
-                <div class="content has-text-justified">
-                  <!--
-                  <p>
-                   Explain method
-                  </p>
-                -->
-                  <!-- <div class="container">
-                    <img src="./static/images/method.png" />
-                    <br />
-                  </div> -->
-      
-                  <p>
-                    We collected Stylebreeder by scraping images from the  Artbreeder website. We chose Artbreeder since it is
-                    one of the most popular platforms for art generation, supporting a variety of text-to-image models. Additionally, all
-                    images on Artbreeder are covered by a CC0 license, which allows for unrestricted use for any purpose. We collected meta 
-                    data along with the images, which includes text prompt (positive and negative), username, hyperparameters. We provide 
-                    additional features such as NSFW scores for each images and text prompts. Please visit our <a href="https://huggingface.co/datasets/stylebreeder/stylebreeder">
-                      Hugging Face
-                    </a> page for viewing
-                    and downloading the dataset
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-           <!--/ Method -->
- 
-           <!-- Clustering -->
-           <section class="section">
-            <div class="container is-max-desktop">
-              <div class="columns is-centered has-text-centered">
-                <div class="column is-12">
-                  <h2 class="title is-3">Discovering Diverse Artistic Styles</h2>
-        
-                  <div class="content has-text-justified">
-                    <!--
-                    <p>
-                     Explain method
-                    </p>
-                  -->
 
-                    <div class="container">
-                      <img src="./static/images/cluster_samples.png" />
-                      <br />
-                    </div>
-        
-                    <p>
-                      We convert the images into a set of style embeddings using a state-of-the-art feature extractor, CSD.
-                      These embeddings are then clustered into groups using the K-Means++ algorithm, which utilizes cosine 
-                      similarity to ensure cohesion within clusters.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <!-- Clustering -->
+        <!--/ Method -->
+ 
 
             <!-- Personalized Generation -->
             <section class="section">
             <div class="container is-max-desktop">
               <div class="columns is-centered has-text-centered">
                 <div class="column is-12">
-                  <h2 class="title is-3">Personalized Image Generation Based on Style</h2>
+                  <h2 class="title is-3">Personalized Image Editing Based on Style</h2>
         
                   <div class="content has-text-justified">
                     <!--
@@ -264,18 +187,18 @@
                     </p>
                   -->
                     <div class="container">
-                      <img src="./static/images/method.png" />
+                      <img src="./static/images/qual.png" />
                       <br />
                     </div>
 
                     <div class="container">
-                      <img src="./static/images/style_gen.jpg" />
+                      <img src="./static/images/same-user.png" />
                       <br />
                     </div>
 
                     <p>
-                      We use these clusters of images of discovered styles to fine-tune LoRA models that are capable of generating new images
-                      with similar styles.
+                      <!-- We use these clusters of images of discovered styles to fine-tune LoRA models that are capable of generating new images
+                      with similar styles. -->
                     </p>
                   </div>
                 </div>
@@ -285,103 +208,11 @@
           <!-- Personalized Generation -->
           
           <!-- Recommendation -->
-          <section class="section">
-            <div class="container is-max-desktop">
-              <div class="columns is-centered has-text-centered">
-                <div class="column is-12">
-                  <h2 class="title is-3">Style-based Recommendation</h2>
-                    <!-- <br>
-                    <div class="has-text-justified">
-                      <p>
-                        Using the clusters of images as styles, we can model for each user the styles that they prefer. Using a matrix-factorization based approach, we develop a recommender system to propose new styles that users have not generated images in before.
-                      </p>
-                      <br>
-                    </div> -->
-                  <div class="content has-text-justified">
-                    <!--
-                    <p>
-                     Explain method
-                    </p>
-                  -->
-                    <div class="container">
-                      <img src="./static/images/style_recommend.jpg" />
-                      <br />
-                    </div>
-                    <p class="has-text-justified">
-                      Using the clusters of images as styles, we can model for each user the styles that they prefer. Using a matrix-factorization based approach, we develop a recommender system to propose new styles that users have not generated images in before.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+
           <!-- Recommendation -->
 
-          <section class="section">
-            <div class="container is-max-desktop">
-              <div class="columns is-centered has-text-centered">
-                <div class="column is-12">
-                  <h2 class="title is-3">Style Atlas</h2>
-                    <!-- <br>
-                    <div class="has-text-justified">
-                      <p>
-                        Using the clusters of images as styles, we can model for each user the styles that they prefer. Using a matrix-factorization based approach, we develop a recommender system to propose new styles that users have not generated images in before.
-                      </p>
-                      <br>
-                    </div> -->
-                  <div class="content has-text-justified">
-                    <!--
-                    <p>
-                     Explain method
-                    </p>
-                  -->
-                    <div class="container">
-                      <img src="./static/images/style_atlas.png" />
-                      <br />
-                    </div>
-                    <p class="has-text-justified">
-                      Since LoRA has become a popular tool for lightweight concept tuning within the community, 
-                      we are including 100 style LoRAs in our style atlas. Find the style atlas <a href="https://stylebreeder.github.io/atlas/">here</a>.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <section class="section">
-            <div class="container is-max-desktop">
-              <div class="columns is-centered has-text-centered">
-                <div class="column is-12">
-                  <h2 class="title is-3">Additional Info</h2>
-                    <!-- <br>
-                    <div class="has-text-justified">
-                      <p>
-                        Using the clusters of images as styles, we can model for each user the styles that they prefer. Using a matrix-factorization based approach, we develop a recommender system to propose new styles that users have not generated images in before.
-                      </p>
-                      <br>
-                    </div> -->
-                  <div class="content has-text-justified">
-                    <!--
-                    <p>
-                     Explain method
-                    </p>
-                  -->
-                    <!-- <div class="container">
-                      <img src="./static/images/style_atlas.png" />
-                      <br />
-                    </div> -->
-                    <p class="has-text-justified">
-                      We provide a <a href="https://docs.google.com/forms/d/e/1FAIpQLSeM709MtC41P-0Z-dLip-Z-hX3c72O4RQ8sL5_Rfd_fpyQLfw/viewform">Google form</a> 
-                      for reporting harmful or inappropriate images and prompts, as well as allowing artists to opt-out in case their names are used in the text prompts.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <section class="section" id="BibTeX">
+          <!-- BibTeX -->
+          <!-- <section class="section" id="BibTeX">
             <div class="container is-max-desktop content">
               <h2 class="title">BibTeX</h2>
               <pre><code>@inproceedings{
@@ -393,7 +224,7 @@
     url={https://openreview.net/forum?id=EvgyfFsv0w}
 }</code></pre>
             </div>
-          </section>
+          </section> -->
           
           <footer class="footer">
             <div class="container">
