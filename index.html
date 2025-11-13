@@ -163,7 +163,9 @@
 
 
                     <div class="container">
-                      <img src="./static/images/teaser-pers.png" />
+                      <figure class="image" style="max-width:70%; margin: 0 auto;">
+                        <img src="./static/images/teaser-pers.png" />
+                      </figure>
                       <br />
                     </div>
       
@@ -185,6 +187,12 @@
                     <img src="./static/images/framework.png" />
                     <br />
                   </div>
+                  <p>
+                    1) We first fine-tune a language model so it can generate precise editing instructions. 2) We
+                      then introduce a graph-aware DPO objective that leverages collaborative user data to learn individual
+                      editing preferences. 3) After training, the system takes an input image and a user profile, produces
+                      tailored editing instructions, and outputs the corresponding personalized edit.
+                  </p>
                 </div>
               </div>
             </div>
@@ -210,6 +218,13 @@
                       <img src="./static/images/qual.png" />
                       <br />
                     </div>
+                    <p>
+                       <b>(a) Qualitative Results for Individual Users on Different Objects.</b> Our framework is able
+                          to incorporate personalized elements into the image editing process, such as adding neon or futuristic
+                          elements for Futuristic Techie profile. <b>(b) Qualitative Results for User-Provided Personalized
+                          Edits.</b> Our framework allows users to provide additional guidance while performing personalized
+                          edits.
+                    </p>
 
                     <div class="container">
                       <img src="./static/images/same-user.png" />
@@ -217,8 +232,9 @@
                     </div>
 
                     <p>
-                      <!-- We use these clusters of images of discovered styles to fine-tune LoRA models that are capable of generating new images
-                      with similar styles. -->
+                      <b>Qualitative Results for a Single User on Diverse Objects.</b> For a user who loves unicorns,
+                    rainbows, and vibrant, playful palettes, our system infuses that whimsical aesthetic into a wide range
+                    of objects - from cars and guitars to watchtowers.
                     </p>
                   </div>
                 </div>
